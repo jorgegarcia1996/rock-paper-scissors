@@ -57,27 +57,27 @@ class Game extends Component {
   render() {
     return (
       <div className="Game">
-        <h1>Select hand</h1>
-        <button
+        <h1>Select</h1>
+        <a
           className="scissors hand-select"
           onClick={i => this.changeHand("hand-scissors")}
         >
           <Hand handType="hand-scissors" />
-        </button>
-        <button
+        </a>
+        <a
           className="rock hand-select"
           onClick={i => this.changeHand("hand-rock")}
         >
           <Hand handType="hand-rock" />
-        </button>
-        <button
+        </a>
+        <a
           className="paper hand-select"
           onClick={i => this.changeHand("hand-paper")}
         >
           <Hand handType="hand-paper" />
-        </button>
+        </a>
         <div className="player-result">
-          <h1>Player</h1>
+          <h1>Your hand</h1>
           <Hand handType={this.state.playerHand} />
         </div>
         <div className="cpu-result">

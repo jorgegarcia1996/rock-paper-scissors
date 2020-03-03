@@ -4,13 +4,22 @@
   text-align: center;
 }
 
-button.hand-select {
+a.hand-select {
   margin-top: 1vw;
   margin-bottom: 1vw;
-  border: 1px solid #999;
   float: left;
   font-weight: bold;
   line-height: 34px;
   padding: 2vw;
   text-align: center;
+  :hover {
+    color: rgb(94, 94, 94);
+  }
+  :active {
+    color: lightblue
+  }
+}
+
+.player-result, .cpu-result {
+  padding: 2vw 0 2vw 0;
 }
